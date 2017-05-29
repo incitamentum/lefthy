@@ -17,6 +17,10 @@ gem 'pg', group: :production
 #12 factor for heroku 
 gem 'rails_12factor', group: :production
 
+# adding  images 
+gem 'paperclip'
+gem 'dropzonejs-rails'
+
 #bootstrap gem
 gem 'bootstrap-sass'
 # Use Puma as the app server

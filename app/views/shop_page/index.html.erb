@@ -1,2 +1,13 @@
-<h1>ShopPage#index</h1>
-<p>Find me in app/views/shop_page/index.html.erb</p>
+<h1>Actors</h1>
+
+  <% @actors.each do |actor| %>
+  <%= link_to "Edit", "actor/#{actor.id}/edit", class: "btn btn-sm btn-info pull-right" %>
+  <%= link_to "Show", "actor/#{actor.id}", class: "btn btn-sm btn-info pull-right" %>
+<strong><%= link_to actor.name, "actors/#{actor.id}" %></sttrong>
+<br>
+<strong><%= actor.gender %></strong>
+<br>
+<strong><%= actor.zodiac_sign %></strong>
+<br>
+<hr>
+  <% end %>
